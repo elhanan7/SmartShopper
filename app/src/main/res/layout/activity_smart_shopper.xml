@@ -12,7 +12,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/dualLayout">
+        android:id="@+id/dualLayout"
+        android:layout_weight="1">
 
         <LinearLayout
             android:orientation="vertical"
@@ -22,30 +23,36 @@
             android:layout_weight="1">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/quantity_left"
-                android:id="@+id/textView" />
+                android:id="@+id/textView"
+                android:textAlignment="center" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/txtQ1" />
+                android:id="@+id/txtQ1"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textAlignment="center" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/price_left"
-                android:id="@+id/textView2" />
+                android:id="@+id/textView2"
+                android:textAlignment="center" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/txtP1" />
+                android:id="@+id/txtP1"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textAlignment="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,36 +63,43 @@
             android:layout_weight="1">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/quantity_right"
-                android:id="@+id/textView3" />
+                android:id="@+id/textView3"
+                android:textAlignment="center" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/txtQ2" />
+                android:id="@+id/txtQ2"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textAlignment="center" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/price_right"
-                android:id="@+id/textView4" />
+                android:id="@+id/textView4"
+                android:textAlignment="center" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberDecimal"
                 android:ems="10"
-                android:id="@+id/txtP2" />
+                android:id="@+id/txtP2"
+                android:textSize="@dimen/abc_text_size_display_1_material"
+                android:textAlignment="center" />
         </LinearLayout>
     </LinearLayout>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/compareButton" />
+        android:text="@string/comapre_button"
+        android:id="@+id/compareButton"
+        android:layout_weight="0" />
 </LinearLayout>
