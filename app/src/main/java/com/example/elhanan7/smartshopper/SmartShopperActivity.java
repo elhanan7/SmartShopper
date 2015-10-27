@@ -52,7 +52,7 @@ public class SmartShopperActivity extends AppCompatActivity {
                     left.setBackgroundColor(BLUE_COLOR);
                     right.setBackgroundColor(BLUE_COLOR);
                 }
-                else if (r1 > r2) {
+                else if (r1 < r2) {
                     left.setBackgroundColor(RED_COLOR);
                     right.setBackgroundColor(GREEN_COLOR);
                 }
@@ -83,6 +83,7 @@ public class SmartShopperActivity extends AppCompatActivity {
         q1.setOnFocusChangeListener(listener);
         p1.setSelectAllOnFocus(true);
         p1.setOnFocusChangeListener(listener);
+        p1.setNextFocusDownId(R.id.txtQ2);
         q2.setSelectAllOnFocus(true);
         q2.setOnFocusChangeListener(listener);
         p2.setSelectAllOnFocus(true);
