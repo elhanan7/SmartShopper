@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SmartShopper</string>
+    <string name="quantity_left">Qty. 1</string>
+    <string name="price_left">Price 1</string>
+    <string name="quantity_right">Qty. 2</string>
+    <string name="price_right">Price 2</string>
+    <string name="comapre_button">Compare</string>
 </resources>
