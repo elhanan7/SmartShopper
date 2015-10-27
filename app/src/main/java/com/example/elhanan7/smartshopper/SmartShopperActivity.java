@@ -10,9 +10,9 @@ import android.widget.LinearLayout;
 
 public class SmartShopperActivity extends AppCompatActivity {
 
-    final private int RED_COLOR = 0x88FF0000;
-    final private int GREEN_COLOR = 0x8800FF00;
-    final private int BLUE_COLOR = 0x880000FF;
+    final private int RED_COLOR = 0xBBFF0000;
+    final private int GREEN_COLOR = 0xBB00FF00;
+    final private int BLUE_COLOR = 0xBB0000FF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,9 +79,13 @@ public class SmartShopperActivity extends AppCompatActivity {
         EditText q2 = (EditText) findViewById(R.id.txtQ2);
         EditText p2 = (EditText) findViewById(R.id.txtP2);
 
+        q1.setSelectAllOnFocus(true);
         q1.setOnFocusChangeListener(listener);
+        p1.setSelectAllOnFocus(true);
         p1.setOnFocusChangeListener(listener);
+        q2.setSelectAllOnFocus(true);
         q2.setOnFocusChangeListener(listener);
+        p2.setSelectAllOnFocus(true);
         p2.setOnFocusChangeListener(listener);
     }
 }
